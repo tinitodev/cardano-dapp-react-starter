@@ -26,16 +26,6 @@ const useStyles = makeStyles((theme: Theme) => ({
       alignItems: 'center',
     },
   },
-  bonfireImage: {
-    width: '200px',
-    height: '200px',
-    margin: '20px',
-  },
-  secondImg: {
-    [theme.breakpoints.down('tablet')]: {
-      display: 'none',
-    },
-  },
 }))
 
 const HomePage = () => {
