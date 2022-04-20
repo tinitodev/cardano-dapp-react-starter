@@ -21,6 +21,12 @@
 };
  ```
 
+## Demo
+
+You can see a live example using this code at:
+
+[Ada Burner web](https://ada-burner.netlify.app/)
+
 ## Notes and Clarifications
 
 This was my first approach for a Dapp on Cardano. Basically, an example or proof of concept on how to connect wallets on the frontend, and also how to build and submit a simple transaction with the help of 'cardano-multiplatform-lib' (forked from 'cardano-serialization-lib'). The provided example will allow you to send $ADA to a Plutus Script Address and set a Datum on the Tx. The hardcoded datum is just () (Unit), but you could change that to your needs, and play around with different types of Data. You could add additional functionalities and functions (for example in the 'transactionsUtils.ts' file).
@@ -49,3 +55,5 @@ I tried to leave this project as empty and as clean as possible, so the people u
 Some of the functions in 'transactionsUtils.ts' file were entirely or partially taken from [dynamicstrategies/cardano-wallet-connector](https://github.com/dynamicstrategies/cardano-wallet-connector/blob/master/src/App.js) and adapted to typescript.
 
 These Cardano Foundation [CIP-0030 docs](https://github.com/cardano-foundation/CIPs/tree/master/CIP-0030) were consulted, to better understand the WalletAPI available methods, their signature types (params), as well as the different APIError types and codes.
+
+Also this [page](https://docs.cardano.org/cardano-components/cardano-serialization-lib) and these [docs](https://github.com/Emurgo/cardano-serialization-lib/tree/master/doc/getting-started) about '@emurgo/cardano-serialization-lib' were consulted on how to use of this library.
