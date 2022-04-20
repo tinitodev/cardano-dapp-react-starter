@@ -46,6 +46,6 @@ I tried to leave this project as empty and as clean as possible, so the people u
 
 ### Credits & Sources
 
-Some of the functions in 'transactionsUtils.ts' file where entirely or partially taken from [dynamicstrategies/cardano-wallet-connector](https://github.com/dynamicstrategies/cardano-wallet-connector/blob/master/src/App.js) and adapted to typescript.
+Some of the functions in 'transactionsUtils.ts' file were entirely or partially taken from [dynamicstrategies/cardano-wallet-connector](https://github.com/dynamicstrategies/cardano-wallet-connector/blob/master/src/App.js) and adapted to typescript.
 
-These cardano foundation [CIP-0030 docs](https://github.com/cardano-foundation/CIPs/tree/master/CIP-0030) were consulted, to better understand the WalletAPI available methods, their signature types (params), as well as the different APIError types and codes.
+These Cardano Foundation [CIP-0030 docs](https://github.com/cardano-foundation/CIPs/tree/master/CIP-0030) were consulted, to better understand the WalletAPI available methods, their signature types (params), as well as the different APIError types and codes.
