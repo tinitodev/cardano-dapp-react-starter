@@ -23,7 +23,7 @@
 
 ## Notes and Clarifications
 
-This was my first approach for a Dapp on Cardano. Basically, an example or proof of concept on how to connect wallets on the frontend, and also how to build and submit a simple transaction with the help of 'cardano-multiplatform-lib' (forked from 'cardano-serialization-lib'). The provided example will allow you to send $ADA to a Plutus Script Address and set a Datum on the Tx. The hardcoded datum is just () (Unit), but you could change that to your needs, and play around with different types of Data. You could add additional functionalities and functions (for exmaple in the 'transactionsUtils.ts' file).
+This was my first approach for a Dapp on Cardano. Basically, an example or proof of concept on how to connect wallets on the frontend, and also how to build and submit a simple transaction with the help of 'cardano-multiplatform-lib' (forked from 'cardano-serialization-lib'). The provided example will allow you to send $ADA to a Plutus Script Address and set a Datum on the Tx. The hardcoded datum is just () (Unit), but you could change that to your needs, and play around with different types of Data. You could add additional functionalities and functions (for example in the 'transactionsUtils.ts' file).
 
 Please take into account that the Cardano ecosystem and tooling is very new and changing almost every day. So it’s very likely that the approach I used for this first project/exercise won’t be the same as the one I will probably use for future or more complex ones.
 Also note, that this is a purely frontend (serverless) simple project, but for more complex applications you may need/want to build a backend to make the app more robust, etc.
