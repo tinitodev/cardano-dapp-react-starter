@@ -38,7 +38,7 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
 }))
 
-export const HomePage = () => {
+const HomePage = () => {
   const classes = useStyles()
   const { address, isMainnet } = useContext(WalletAPIContext)
   const [showMainnetAlert, setShowMainnetAlert] = useState(false)
@@ -84,3 +84,5 @@ export const HomePage = () => {
     </Box>
   )
 }
+
+export default HomePage
