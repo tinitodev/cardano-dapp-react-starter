@@ -42,3 +42,10 @@ It also has eslint and prettier already setup, to have some basic code format ru
 Using webpack, with dev and prod config.
 
 I tried to leave this project as empty and as clean as possible, so the people using it as starter can add their own stuff, but there is some basic structure/components to make it more easy to get started playing and have something to see out-of-the-box.
+
+
+### Credits & Sources
+
+Some of the functions in 'transactionsUtils.ts' file where entirely or partially taken from [dynamicstrategies/cardano-wallet-connector](https://github.com/dynamicstrategies/cardano-wallet-connector/blob/master/src/App.js) and adapted to typescript.
+
+These cardano foundation [CIP-0030 docs](https://github.com/cardano-foundation/CIPs/tree/master/CIP-0030) were consulted, to better understand the WalletAPI available methods, their signature types (params), as well as the different APIError types and codes.
