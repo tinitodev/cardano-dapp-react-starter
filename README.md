@@ -27,3 +27,18 @@ This was my first approach for a Dapp on Cardano. Basically, an example or proof
 
 Please take into account that the Cardano ecosystem and tooling is very new and changing almost every day. So it’s very likely that the approach I used for this first project/exercise won’t be the same as the one I will probably use for future or more complex ones.
 Also note, that this is a purely frontend (serverless) simple project, but for more complex applications you may need/want to build a backend to make the app more robust, etc.
+
+## The Starter
+
+This project is built using Typescript as is obviously a big help to keep all the different types of data clearly distinguishable and minimize the introductions of bugs or runtime errors.
+
+For styles, UI elements and theme, is using Material-UI.
+It already has react-router-dom setup, and even a silly page to navigate from/to Homepage (so you can easily add more pages).
+
+There is some basic error-handling and alerts already in place, but can be improved a lot for a better UX and also better code quality.
+
+It also has eslint and prettier already setup, to have some basic code format rules. You can obviously change those config files to your preferences (``npm run format`` to explicitly format code).
+
+Using webpack, with dev and prod config.
+
+I tried to leave this project as empty and as clean as possible, so the people using it as starter can add their own stuff, but there is some basic structure/components to make it more easy to get started playing and have something to see out-of-the-box.
