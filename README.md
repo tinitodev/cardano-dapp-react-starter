@@ -1,4 +1,4 @@
-# Cardano DApp - simple react starter (POC)
+# Cardano DApp - Simple React Starter
 
 ## Instructions
 
@@ -21,7 +21,7 @@
 };
  ```
 
- (this is a known [issue](https://github.com/rustwasm/wasm-bindgen/issues/2706) with [wasm-bindgen](https://github.com/rustwasm/wasm-bindgen/issues/2706))
+ (this is a known [issue](https://github.com/rustwasm/wasm-bindgen/issues/2706) with wasm-bindgen)
 
 ## Demo
 
