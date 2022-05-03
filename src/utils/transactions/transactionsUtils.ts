@@ -1,5 +1,4 @@
 const Buffer = require('buffer/').Buffer
-import { ProtocolParams } from '../../config/protocolParams'
 import {
   Address,
   TransactionUnspentOutput,
@@ -13,10 +12,10 @@ import {
   Transaction,
   hash_plutus_data,
   TransactionOutputBuilder,
-  PlutusData,
+  encode_json_str_to_plutus_datum,
 } from '@dcspark/cardano-multiplatform-lib-browser'
-import { utils } from '@stricahq/typhonjs'
 
+import { ProtocolParams } from '../../config/protocolParams'
 import { WalletAPI, TxSendError, TxSignError } from '../../types/models'
 
 const initializeTxBuilder = () => {
@@ -57,11 +56,10 @@ export const buildSendAdaToPlutusScript = async (
   txOutputBuilder = txOutputBuilder.with_address(scriptAddress)
 
   //Datum
-  const unitDatum = utils.createPlutusDataCbor({
-    constructor: 0,
-    fields: [],
-  })
-  const datumHash = hash_plutus_data(PlutusData.from_bytes(unitDatum))
+  const unitDatumJson = JSON.stringify({ constructor: 0, fields: [] })
+  const datumHash = hash_plutus_data(
+    encode_json_str_to_plutus_datum(unitDatumJson, 1)
+  )
   txOutputBuilder = txOutputBuilder.with_data_hash(datumHash)
 
   //Amount(lovelace)

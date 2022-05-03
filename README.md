@@ -21,6 +21,8 @@
 };
  ```
 
+ (this is a known [issue](https://github.com/rustwasm/wasm-bindgen/issues/2706) with [wasm-bindgen](https://github.com/rustwasm/wasm-bindgen/issues/2706))
+
 ## Demo
 
 You can see a live example using this code at:
