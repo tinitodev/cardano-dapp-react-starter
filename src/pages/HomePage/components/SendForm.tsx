@@ -76,7 +76,7 @@ const SendForm = () => {
 
   return (
     <Box className={classes.container}>
-      <InputLabel>Input the amount of $ADA you want to Send:</InputLabel>
+      <InputLabel>Input the amount of $ADA you want to send:</InputLabel>
       <Input
         value={amountInADA}
         onChange={(e) => setAmountInADA(e.target.value)}

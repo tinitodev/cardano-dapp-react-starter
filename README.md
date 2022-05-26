@@ -1,16 +1,18 @@
 # Cardano DApp - Simple React Starter
 
-## Instructions
+## Demo
+
+You can see a live example using this code at:
+
+[Ada-Burner web](https://ada-burner.netlify.app/)
+
+## Getting Started
 
  - Clone this repo
- - ``cd`` into the repo directory
- - Run ``npm install``
- - Fill ``SCRIPT_ADDRESS_TESTNET`` (on 'src/config/constants.ts') with your own script-address
- - Start the app in development mode 
-
-    ```
-      npm run dev
-    ```
+ - `cd` into the repo directory
+ - Run `npm install` (may need `--legacy-peer-deps` or `--force`)
+ - Fill `SCRIPT_ADDRESS_TESTNET` (on 'src/config/constants.ts') with your own script-address
+ - Start the app in development mode: `npm run dev` 
  
  Note: You may encounter a "critical warning" (from webpack complaining) this is due to a dynamically defined require on 'cardano-multiplatform-lib', you can just ignore it, or go to 'node_modules/@dcspark/cardano-multiplatform-lib-browser/cardano_multiplatform_lib_bg.js' file and comment out the function making this require (just search by: 'require', should be at line 16059 aprox.)
 
@@ -23,16 +25,24 @@
 
  (this is a known [issue](https://github.com/rustwasm/wasm-bindgen/issues/2706) with wasm-bindgen)
 
-## Demo
 
-You can see a live example using this code at:
+## Other Instructions
 
-[Ada Burner web](https://ada-burner.netlify.app/)
+### Build project for prod
+ - `npm run build`
+ - `npm run serve:prod` (to serve prod files/build folder locally)
+
+### Format code
+ - `npm run format`
+
 
 ## Notes and Clarifications
 
-This was my first approach for a Dapp on Cardano. Basically, an example or proof of concept on how to connect wallets on the frontend, and also how to build and submit a simple transaction with the help of 'cardano-multiplatform-lib' (forked from 'cardano-serialization-lib'). The provided example will allow you to send $ADA to a Plutus Script Address and set a Datum on the Tx. The hardcoded datum is just () (Unit), but you could change that to your needs, and play around with different types of Data. You could add additional functionalities and functions (for example in the 'transactionsUtils.ts' file).
+This was my first approach for a Dapp on Cardano. Basically, an example or proof of concept on how to connect wallets on the frontend, and also how to build and submit a simple transaction with the help of 'cardano-multiplatform-lib' (forked from 'cardano-serialization-lib'). \
+The provided example will allow you to send $ADA to a Plutus Script Address and set a Datum on the Tx. The hardcoded datum is just () (Unit), but you could change that to your needs, and play around with different types of Data. You could add additional functionalities and functions (for example in the 'transactionsUtils.ts' file).
 
+
+> **Note** 
 Please take into account that the Cardano ecosystem and tooling is very new and changing almost every day. So it’s very likely that the approach I used for this first project/exercise won’t be the same as the one I will probably use for future or more complex ones.
 Also note, that this is a purely frontend (serverless) simple project, but for more complex applications you may need/want to build a backend to make the app more robust, etc.
 
@@ -45,7 +55,7 @@ It already has react-router-dom setup, and even a silly page to navigate from/to
 
 There is some basic error-handling and alerts already in place, but can be improved a lot for a better UX and also better code quality.
 
-It also has eslint and prettier already setup, to have some basic code format rules. You can obviously change those config files to your preferences (``npm run format`` to explicitly format code).
+It also has eslint and prettier already setup, to have some basic code formatting rules. You can obviously change those config files to your preferences.
 
 Using webpack, with dev and prod config.
 
